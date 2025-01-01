@@ -2,6 +2,10 @@ package net.timeworndevs.tfc_ore_helper.util;
 
 public class TFCOHMetalUtil {
 
+    public enum TFCOHItemTypes{
+        BULLION
+    }
+
     public enum DefaultTFCMetals{
         BISMUTH,
         BISMUTH_BRONZE,

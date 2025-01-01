@@ -2,16 +2,42 @@ package net.timeworndevs.tfc_ore_helper.common;
 
 import net.dries007.tfc.common.items.MoldItem;
 import net.dries007.tfc.common.items.TFCItems;
+import net.dries007.tfc.util.Helpers;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.timeworndevs.tfc_ore_helper.Main;
+import net.timeworndevs.tfc_ore_helper.util.TFCOHMetalUtil;
 
+import java.util.Locale;
+import java.util.Map;
+import java.util.function.Supplier;
+
+@SuppressWarnings("unused")
 public class TFCOHItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MODID);
 
+    //register bullions proper
+    public static final Map<TFCOHMetalUtil.DefaultTFCMetals, Map<TFCOHMetalUtil.TFCOHItemTypes, RegistryObject<Item>>> METAL_ITEMS = Helpers.mapOfKeys(TFCOHMetalUtil.DefaultTFCMetals.class, metal ->
+            Helpers.mapOfKeys(TFCOHMetalUtil.TFCOHItemTypes.class, type ->
+                    register("metal/" + type.name() + "/" + metal.name(), ()-> new Item(metal_properties()))
+            )
+    );
+
+    public static Item.Properties metal_properties() {
+        return new Item.Properties();
+    }
+
+    private static RegistryObject<Item> register(String name)
+    {
+        return register(name, () -> new Item(new Item.Properties()));
+    }
+    private static <T extends Item> RegistryObject<T> register(String name, Supplier<T> item)
+    {
+        return ITEMS.register(name.toLowerCase(Locale.ROOT), item);
+    }
     /*
     bismuth
     bismuth bronze
@@ -45,6 +71,7 @@ public class TFCOHItems {
 
 
     //todo: Convert everything to a registry map like how TFC does it
+    /*
     public static final RegistryObject<Item> BISMUTH_BULLION = ITEMS.register("metal/bullion/bismuth_bullion", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BISMUTH_BRONZE_BULLION = ITEMS.register("metal/bullion/bismuth_bronze_bullion", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BLACK_BRONZE_BULLION = ITEMS.register("metal/bullion/black_bronze_bullion", () -> new Item(new Item.Properties()));
@@ -73,6 +100,5 @@ public class TFCOHItems {
     public static final RegistryObject<Item> HIGH_CARBON_BLUE_STEEL_BULLION = ITEMS.register("metal/bullion/high_carbon_blue_steel_bullion", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HIGH_CARBON_RED_STEEL_BULLION = ITEMS.register("metal/bullion/high_carbon_red_steel_bullion", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> UNKNOWN_BULLION = ITEMS.register("metal/bullion/unknown_bullion", () -> new Item(new Item.Properties()));
-
-    //public static final RegistryObject<Item> _BULLION = ITEMS.register("metal/bullion/_bullion", () -> new Item(new Item.Properties()));
+    */
 }
