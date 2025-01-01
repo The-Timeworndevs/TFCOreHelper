@@ -1,4 +1,37 @@
 {
+  "Category": "Base TFC Metals",
+
+  "item.tfc_ore_helper.metal.bullion.bismuth_bullion": "Bismuth Bullion",
+  "item.tfc_ore_helper.metal.bullion.bismuth_bronze_bullion": "Bismuth Bronze Bullion",
+  "item.tfc_ore_helper.metal.bullion.black_bronze_bullion": "Black Bronze Bullion",
+  "item.tfc_ore_helper.metal.bullion.bronze_bullion": "Bronze Bullion",
+  "item.tfc_ore_helper.metal.bullion.brass_bullion": "Brass Bullion",
   "item.tfc_ore_helper.metal.bullion.copper_bullion": "Copper Bullion",
-  "item.tfc_ore_helper.metal.bullion.gold_bullion": "Gold Bullion"
+  "item.tfc_ore_helper.metal.bullion.gold_bullion": "Gold Bullion",
+  "item.tfc_ore_helper.metal.bullion.nickel_bullion": "Nickel Bullion",
+  "item.tfc_ore_helper.metal.bullion.rose_gold_bullion": "Rose Gold Bullion",
+  "item.tfc_ore_helper.metal.bullion.silver_bullion": "Silver Bullion",
+  "item.tfc_ore_helper.metal.bullion.tin_bullion": "Tin Bullion",
+  "item.tfc_ore_helper.metal.bullion.zinc_bullion": "Zinc Bullion",
+  "item.tfc_ore_helper.metal.bullion.sterling_silver_bullion": "Sterling Silver Bullion",
+  "item.tfc_ore_helper.metal.bullion.wrought_iron_bullion": "Wrought Iron Bullion",
+  "item.tfc_ore_helper.metal.bullion.cast_iron_bullion": "Cast Iron Bullion",
+  "item.tfc_ore_helper.metal.bullion.pig_iron_bullion": "Pig Iron Bullion",
+  "item.tfc_ore_helper.metal.bullion.steel_bullion": "Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.black_steel_bullion": "Black Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.blue_steel_bullion": "Blue Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.red_steel_bullion": "Red Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.weak_steel_bullion": "Weak Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.weak_blue_steel_bullion": "Weak Blue Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.weak_red_steel_bullion": "Weak Red Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.high_carbon_steel_bullion": "High Carbon Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.high_carbon_black_steel_bullion": "High Carbon Black Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.high_carbon_blue_steel_bullion": "High Carbon Blue Steel Bullion",
+  "item.tfc_ore_helper.metal.bullion.high_carbon_red_steel_bullion": "High Carbon Steel Red Bullion",
+  "item.tfc_ore_helper.metal.bullion.unknown_bullion": "Unknown Bullion",
+
+  "Category2": "Firmalife Metals",
+
+
+  "": ""
 }
